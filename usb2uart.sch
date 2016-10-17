@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:usb2uart-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -46,7 +47,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L CP2110 DD1
+L CP2110-RESCUE-usb2uart DD1
 U 1 1 57FF75B0
 P 5550 3650
 F 0 "DD1" H 5050 4450 60  0000 C CNN
@@ -95,7 +96,7 @@ U 1 1 57FF8439
 P 4150 4150
 F 0 "C3" H 4200 4250 50  0000 L CNN
 F 1 "0.1" H 4200 4050 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 4150 4150 60  0001 C CNN
+F 2 "Capacitors_ThroughHole:C_Rect_L7_W2.5_P5" H 4150 4150 60  0001 C CNN
 F 3 "" H 4150 4150 60  0000 C CNN
 	1    4150 4150
 	1    0    0    -1  
@@ -150,7 +151,7 @@ U 1 1 57FF98F0
 P 6900 2450
 F 0 "R2" V 6980 2450 50  0000 C CNN
 F 1 "330" V 6900 2450 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" H 6900 2450 60  0001 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" H 6900 2450 60  0001 C CNN
 F 3 "" H 6900 2450 60  0000 C CNN
 	1    6900 2450
 	-1   0    0    1   
@@ -161,7 +162,7 @@ U 1 1 57FF992F
 P 7200 2450
 F 0 "R3" V 7280 2450 50  0000 C CNN
 F 1 "330" V 7200 2450 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" H 7200 2450 60  0001 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" H 7200 2450 60  0001 C CNN
 F 3 "" H 7200 2450 60  0000 C CNN
 	1    7200 2450
 	-1   0    0    1   
@@ -178,28 +179,6 @@ F 3 "" H 6600 2550 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CONN_2 P4
-U 1 1 57FF9F41
-P 6600 4750
-F 0 "P4" V 6550 4750 40  0000 C CNN
-F 1 "CONN_2" V 6650 4750 40  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 6600 4750 60  0001 C CNN
-F 3 "" H 6600 4750 60  0000 C CNN
-	1    6600 4750
-	0    1    1    0   
-$EndComp
-$Comp
-L CONN_10 P5
-U 1 1 57FFA615
-P 8050 3850
-F 0 "P5" V 8000 3850 60  0000 C CNN
-F 1 "CONN_10" V 8100 3850 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x10" H 8050 3850 60  0001 C CNN
-F 3 "" H 8050 3850 60  0000 C CNN
-	1    8050 3850
-	1    0    0    -1  
-$EndComp
-$Comp
 L CONN_2 P2
 U 1 1 57FFB9C0
 P 3450 2250
@@ -209,6 +188,72 @@ F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 3450 2250 60  0001 C CNN
 F 3 "" H 3450 2250 60  0000 C CNN
 	1    3450 2250
 	0    1    -1   0   
+$EndComp
+$Comp
+L CONN_5 P1
+U 1 1 57FFD14B
+P 1800 3200
+F 0 "P1" V 1750 3200 50  0000 C CNN
+F 1 "CONN_5" V 1850 3200 50  0000 C CNN
+F 2 "Connect:USB_B" H 1800 3200 60  0001 C CNN
+F 3 "" H 1800 3200 60  0000 C CNN
+	1    1800 3200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_4 P5
+U 1 1 58048C85
+P 8100 4250
+F 0 "P5" V 8050 4250 50  0000 C CNN
+F 1 "CONN_4" V 8150 4250 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 8100 4250 60  0001 C CNN
+F 3 "" H 8100 4250 60  0000 C CNN
+	1    8100 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_4 P6
+U 1 1 5804AB2C
+P 8100 3550
+F 0 "P6" V 8050 3550 50  0000 C CNN
+F 1 "CONN_4" V 8150 3550 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 8100 3550 60  0001 C CNN
+F 3 "" H 8100 3550 60  0000 C CNN
+	1    8100 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P7
+U 1 1 5804AB71
+P 8100 3900
+F 0 "P7" V 8050 3900 40  0000 C CNN
+F 1 "CONN_2" V 8150 3900 40  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 8100 3900 60  0001 C CNN
+F 3 "" H 8100 3900 60  0000 C CNN
+	1    8100 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_1 P8
+U 1 1 5804B757
+P 6700 4550
+F 0 "P8" H 6780 4550 40  0000 L CNN
+F 1 "CONN_1" H 6700 4605 30  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 6700 4550 60  0001 C CNN
+F 3 "" H 6700 4550 60  0000 C CNN
+	1    6700 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_1 P4
+U 1 1 5804B7B0
+P 6500 4550
+F 0 "P4" H 6580 4550 40  0000 L CNN
+F 1 "CONN_1" H 6500 4605 30  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 6500 4550 60  0001 C CNN
+F 3 "" H 6500 4550 60  0000 C CNN
+	1    6500 4550
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	2200 3100 4700 3100
@@ -255,8 +300,6 @@ Wire Wire Line
 Connection ~ 3850 3700
 Connection ~ 4450 3000
 Wire Wire Line
-	6400 3500 7300 3500
-Wire Wire Line
 	6400 3700 7200 3700
 Connection ~ 3850 3300
 Wire Wire Line
@@ -276,51 +319,35 @@ Wire Wire Line
 Wire Wire Line
 	6700 3100 6700 2900
 Wire Wire Line
-	7700 3500 7600 3500
+	7400 3500 7400 3700
 Wire Wire Line
-	7600 3500 7600 3200
+	7400 3700 7750 3700
 Wire Wire Line
-	7600 3200 6400 3200
+	7300 3600 7300 3800
 Wire Wire Line
-	7500 3600 7700 3600
+	7300 3800 7750 3800
 Wire Wire Line
-	7500 3600 7500 3300
+	7200 3150 7200 4000
 Wire Wire Line
-	7500 3300 6400 3300
-Wire Wire Line
-	7700 3400 6400 3400
-Wire Wire Line
-	6400 3600 7400 3600
-Wire Wire Line
-	7400 3600 7400 3700
-Wire Wire Line
-	7400 3700 7700 3700
-Wire Wire Line
-	7300 3500 7300 3800
-Wire Wire Line
-	7300 3800 7700 3800
-Wire Wire Line
-	7200 3150 7200 3900
-Wire Wire Line
-	7200 3900 7700 3900
+	7200 4000 7750 4000
 Wire Wire Line
 	6400 3900 7000 3900
 Wire Wire Line
-	7000 3900 7000 4100
+	7000 3900 7000 4200
 Wire Wire Line
-	7000 4100 7700 4100
+	7000 4200 7750 4200
 Wire Wire Line
 	6400 4000 6900 4000
 Wire Wire Line
-	6900 4000 6900 4200
+	6900 4000 6900 4300
 Wire Wire Line
-	6900 4200 7700 4200
+	6900 4300 7750 4300
 Wire Wire Line
 	6400 4100 6800 4100
 Wire Wire Line
-	6800 4100 6800 4300
+	6800 4100 6800 4400
 Wire Wire Line
-	6800 4300 7700 4300
+	6800 4400 7750 4400
 Wire Wire Line
 	6900 2700 6900 2750
 Wire Wire Line
@@ -332,8 +359,7 @@ Wire Wire Line
 Wire Wire Line
 	7200 2150 7200 2200
 Wire Wire Line
-	6900 3150 6900 3500
-Connection ~ 6900 3500
+	6900 3150 6900 3600
 Connection ~ 7200 3700
 Connection ~ 6900 2150
 Wire Wire Line
@@ -349,39 +375,51 @@ Wire Wire Line
 	2250 4400 2250 3400
 Wire Wire Line
 	2250 3400 2200 3400
-$Comp
-L CONN_5 P1
-U 1 1 57FFD14B
-P 1800 3200
-F 0 "P1" V 1750 3200 50  0000 C CNN
-F 1 "CONN_5" V 1850 3200 50  0000 C CNN
-F 2 "Connect:USB_B" H 1800 3200 60  0001 C CNN
-F 3 "" H 1800 3200 60  0000 C CNN
-	1    1800 3200
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	2250 4400 2500 4400
 Wire Wire Line
 	2500 4400 2500 4350
-Wire Wire Line
-	3000 3350 3000 3200
-Connection ~ 3000 3200
-Wire Wire Line
-	2750 3350 2750 3100
-Connection ~ 2750 3100
-Wire Wire Line
-	2500 3350 2500 3000
-Connection ~ 2500 3000
 Wire Wire Line
 	3550 2600 3550 2700
 Wire Wire Line
 	3550 2700 3850 2700
 Connection ~ 3850 2700
 Wire Wire Line
-	7700 4000 7100 4000
+	7750 4100 7100 4100
 Wire Wire Line
-	7100 4000 7100 3800
+	7100 4100 7100 3800
 Wire Wire Line
 	7100 3800 6400 3800
+Wire Wire Line
+	6400 3600 7300 3600
+Connection ~ 6900 3600
+Wire Wire Line
+	7750 3400 7700 3400
+Wire Wire Line
+	7700 3400 7700 3200
+Wire Wire Line
+	7700 3200 6400 3200
+Wire Wire Line
+	7750 3500 7600 3500
+Wire Wire Line
+	7600 3500 7600 3300
+Wire Wire Line
+	7600 3300 6400 3300
+Wire Wire Line
+	7750 3600 7500 3600
+Wire Wire Line
+	7500 3600 7500 3400
+Wire Wire Line
+	7500 3400 6400 3400
+Wire Wire Line
+	7400 3500 6400 3500
+Wire Wire Line
+	3000 3350 3000 3000
+Connection ~ 3000 3000
+Wire Wire Line
+	2750 3350 2750 3200
+Connection ~ 2750 3200
+Wire Wire Line
+	2500 3350 2500 3100
+Connection ~ 2500 3100
 $EndSCHEMATC
