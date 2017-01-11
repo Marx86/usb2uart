@@ -32,7 +32,7 @@ LIBS:valves
 LIBS:cp2110
 LIBS:sp0503baht
 LIBS:usb2uart-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -69,7 +69,7 @@ F 3 "" H 2700 4450 60  0000 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L CP1 C4
+L CP1-RESCUE-usb2uart C4
 U 1 1 57FF80D7
 P 4450 4150
 F 0 "C4" H 4500 4250 50  0000 L CNN
@@ -80,7 +80,7 @@ F 3 "" H 4450 4150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP1 C2
+L CP1-RESCUE-usb2uart C2
 U 1 1 57FF83A0
 P 3850 4150
 F 0 "C2" H 3900 4250 50  0000 L CNN
@@ -91,7 +91,7 @@ F 3 "" H 3850 4150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C3
+L C-RESCUE-usb2uart C3
 U 1 1 57FF8439
 P 4150 4150
 F 0 "C3" H 4200 4250 50  0000 L CNN
@@ -102,7 +102,7 @@ F 3 "" H 4150 4150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP1 C1
+L CP1-RESCUE-usb2uart C1
 U 1 1 57FF8C97
 P 3550 4150
 F 0 "C1" H 3600 4250 50  0000 L CNN
@@ -113,7 +113,7 @@ F 3 "" H 3550 4150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R1
+L R-RESCUE-usb2uart R1
 U 1 1 57FF8D37
 P 4150 3300
 F 0 "R1" V 4230 3300 50  0000 C CNN
@@ -124,7 +124,7 @@ F 3 "" H 4150 3300 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L LED D1
+L LED-RESCUE-usb2uart D1
 U 1 1 57FF9810
 P 6900 2950
 F 0 "D1" H 6900 3050 50  0000 C CNN
@@ -135,7 +135,7 @@ F 3 "" H 6900 2950 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L LED D2
+L LED-RESCUE-usb2uart D2
 U 1 1 57FF9885
 P 7200 2950
 F 0 "D2" H 7200 3050 50  0000 C CNN
@@ -146,7 +146,7 @@ F 3 "" H 7200 2950 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R2
+L R-RESCUE-usb2uart R2
 U 1 1 57FF98F0
 P 6900 2450
 F 0 "R2" V 6980 2450 50  0000 C CNN
@@ -157,7 +157,7 @@ F 3 "" H 6900 2450 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R3
+L R-RESCUE-usb2uart R3
 U 1 1 57FF992F
 P 7200 2450
 F 0 "R3" V 7280 2450 50  0000 C CNN

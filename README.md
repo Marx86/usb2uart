@@ -1,2 +1,2 @@
 # usb2uart
-HID usb to uart converter on cp2110
+KiCAD project for HID usb to uart converter on cp2110

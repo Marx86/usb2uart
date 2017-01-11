@@ -1,4 +1,4 @@
-update=Пн. 17 окт. 2016 11:22:04
+update=Ср. 11 янв. 2017 11:15:51
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=lib
@@ -61,3 +59,5 @@ LibName29=contrib
 LibName30=valves
 LibName31=lib/cp2110
 LibName32=lib/sp0503baht
+[general]
+version=1

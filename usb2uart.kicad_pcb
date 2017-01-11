@@ -1,4 +1,4 @@
-(kicad_pcb (version 20160815) (host pcbnew 201611142047+7354~55~ubuntu15.10.1-product)
+(kicad_pcb (version 20160815) (host pcbnew no-vcs-found-7394~56~ubuntu15.10.1)
 
   (general
     (links 43)
@@ -64,11 +64,11 @@
     (aux_axis_origin 0 0)
     (visible_elements FFFFFF7F)
     (pcbplotparams
-      (layerselection 0x00040_7ffffffe)
+      (layerselection 0x00000_fffffffe)
       (usegerberextensions false)
-      (excludeedgelayer true)
+      (excludeedgelayer false)
       (linewidth 0.020000)
-      (plotframeref false)
+      (plotframeref true)
       (viasonmask false)
       (mode 1)
       (useauxorigin false)
@@ -82,7 +82,7 @@
       (plotinvisibletext false)
       (padsonsilk false)
       (subtractmaskfromsilk false)
-      (outputformat 4)
+      (outputformat 0)
       (mirror false)
       (drillshape 2)
       (scaleselection 1)
